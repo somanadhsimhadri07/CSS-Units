@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units in CSS</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+        .box-px{
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+        }
+        .Parent-percent{
+            width: 400px;
+            height: 400px;
+            background-color: lightcoral;
+        }
+        .Child-percent{
+            width: 50%;
+            height: 50%;
+            background-color: lightcyan;
+        }
+        .rem-paragraph{
+            font-size: 2rem;
+        }
+        .Parent-em{
+            font-size: 26px;
+            background-color: lightgray;
+        }
+        .Child-em{
+            font-size: 1.5em;
+        }
+        .box-vw{
+            width: 50vw;
+            height: 100px;
+            background-color: lightgreen;
+        }
+        .height-vh{
+            height: 25vh;
+            background-color: lightskyblue;
+        }
+        .square-vmin{
+            width: 20vmin;
+            height: 20vmin;
+            background-color: aliceblue;
+        }
+        .square-vmax{
+            width: 20vmax;
+            height: 20vmax;
+            background-color: wheat;
+        }
+        .Parent-relative{
+            box-sizing: border-box;
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            background-color: lightseagreen;
+            position: relative;
+        }
+        .Child-Absolute{
+            
+            width: 100px;
+            height: 100px;
+            border: 2px solid blueviolet;
+            background-color: lightpink;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+        .Parent-font{
+            font-size: 20px;
+        }
+        .Child-font{
+            font-size: inherit;
+        }
+    </style>
+</head>
+<body>
+    <h3>Task-1</h3>
+    <div class="box-px">Box with px units</div>
+    <hr>
+    <h3>Taks-2</h3>
+    <div class="Parent-percent">
+        <div class="Child-percent">Box with % units</div>
+    </div>
+    <hr>
+    <h3>Task-3</h3>
+    <p class="rem-paragraph">This is paragraph uses rem units.</p>
+    <hr>
+    <h3>Task-4</h3>
+    <div class="Parent-em">
+        <p class="Child-em">This paragraph uses "em" units.</p>
+    </div>
+    <hr>
+    <h3>Task-5</h3>
+    <div class="box-vw">Box with vw units</div>
+    <hr>
+    <h3>Task-6</h3>
+    <div class="height-vh"> This is Box with vh units.</div>
+    <hr>
+    <h3>Task-7</h3>
+    <div class="square-vmin"> Square with v-min units</div>
+    <hr>
+    <h3>Task-8</h3>
+    <div class="square-vmax"> Square with v-max units</div>
+    <hr>
+    <h3>Task-9</h3>
+    <div class="Parent-relative">
+        <div class="Child-Absolute">Child-Box</div>
+    </div>
+    <hr>
+    <h3>Task-10</h3>
+    <div class="Parent-font">Parent-Text
+        <div class="Child-font">Child-Text(Inherits Font Size)</div>
+    </div>
+</body>
+</html>
